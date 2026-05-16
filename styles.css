@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= HERO ================= */
+/* COMMIT: height → min-height (zoom safe) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/khi.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.hero-heading {
+    background-color: #0B3C49;
+    color: #ddfff7;
+    padding: 10px;
+    border-radius: 20px;
+    border: #ddfff7 solid 1px;
+}
+
+.hero-heading2 {
+    background-color: #559188;
+    color: #ddfff7;
+    padding: 10px;
+    border-radius: 20px;
+    border: #ddfff7 solid 1px;
+}
+
+/* ================= ACTIVITIES ================= */
+/* COMMIT: fixed typo class + removed fixed height */
+.activities {
+    background-color: #DDFFF7;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.activity-heading {
+    font-size: 40px;
+    color: #0B3C49;
+    margin: 10px 0;
+}
+
+/* COMMIT: added wrap for responsiveness */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* COMMIT: unified card system */
+.card {
+    width: 250px;
+}
+
+/* COMMIT: object-fit added for clean images */
+.cards-img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ================= GUIDE ================= */
+/* COMMIT: added flex-wrap for zoom safety */
+.guide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #0B3C49;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    color: #DDFFF7;
+}
+
+.guide-img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
